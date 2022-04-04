@@ -9,11 +9,15 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password">Anupam@123</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create <!-- update --> </property>
 		<property name="show_sql">true</property>
 		
 		<mapping class="com.anupam.Hibernate_1.Student"/>
 		<mapping class="com.anupam.Hibernate_1.Address"/> 
+		<mapping class="com.anupam.OneToOne.Question"/> 
+		<mapping class="com.anupam.OneToOne.Answer"/> 
+		<mapping class="com.anupam.OneToMany.Question"/> 
+		<mapping class="com.anupam.OneToMany.Answer"/> 
 	</session-factory>
 
 </hibernate-configuration>
