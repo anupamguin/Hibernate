@@ -52,7 +52,9 @@ public class OneTo_Many {
 		
 		// fetching
 		Question q =(Question) session.get(Question.class, 32);
+		System.out.println(q.getQuestionId());
 		System.out.println(q.getQuestion());
+		
 		q.getAnswer().forEach(System.out::println);
 		
 		session.close();
